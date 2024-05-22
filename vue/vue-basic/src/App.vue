@@ -8,6 +8,11 @@
   <h2 :class="{ active: isActive }">미쳤다</h2>
   <button @click="change">버튼</button>
   <!-- isActive 가 True 여야만 활성화가 된다. -->
+  <!-- 스타일 바인딩 테스트 -->
+  <h3 style="color: red; font-size: 24px">스타일 바인딩 테스트입니다.</h3>
+  <h3 :style="{ color: 'fdfdfd', fontSize: 48 + 'px' }">
+    스타일 바인딩 테스트입니다.
+  </h3>
 </template>
 
 <script>
