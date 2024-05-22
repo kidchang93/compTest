@@ -23,7 +23,7 @@ export default {
       rawHtml: "이것은 텍스트입니다.",
       rawHtml2: '<span style="color:red">이것은 빨간색 이어야 합니다.</span>',
       isActive: false,
-      fontColor: "#888888",
+      fontColor: "#887766",
       fontSize: 48,
     };
   },
