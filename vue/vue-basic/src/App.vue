@@ -4,6 +4,11 @@
     <h1>changeText 함수 호출 값: {{ changeText() }}</h1>
     <h1>changeText 함수 호출 값: {{ changeText() }}</h1>
     <h1>changeText 함수 호출 값: {{ changeText() }}</h1>
+
+    <h2>{{ computedText }}</h2>
+    <h2>{{ computedText }}</h2>
+    <h2>{{ computedText }}</h2>
+    <h2>{{ computedText }}</h2>
   </div>
 </template>
 
@@ -25,7 +30,12 @@ export default {
   // 캐싱 기능이 없는 methods 는 호출될때마다 console 값이 출력이 되었습니다.
   // 반면에, computed는 캐싱기능이 있기 떄문에 methods 와 어떤 차이점이 있는지
   // 주의깊게 살펴봐야한다.
-  computed: {},
+  computed: {
+    computedText() {
+      console.log("Computed 기능을 생성하였습니다.");
+      return this.text.split("").reverse().join("");
+    },
+  },
 };
 </script>
 
