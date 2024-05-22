@@ -11,7 +11,7 @@
   <!-- 스타일 바인딩 테스트 (인라인)-->
   <h3 style="color: red; font-size: 24px">스타일 바인딩 테스트입니다.</h3>
   <!-- 하드코딩 스타일 -->
-  <h3 :style="{ color: 'fdfdfd', fontSize: 48 + 'px' }">
+  <h3 :style="{ color: fontColor, fontSize: fontSize + 'px' }">
     스타일 바인딩 테스트입니다.
   </h3>
 </template>
@@ -23,6 +23,8 @@ export default {
       rawHtml: "이것은 텍스트입니다.",
       rawHtml2: '<span style="color:red">이것은 빨간색 이어야 합니다.</span>',
       isActive: false,
+      fontColor: "#888888",
+      fontSize: 48,
     };
   },
   methods: {
